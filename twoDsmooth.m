@@ -19,7 +19,7 @@ end
 
 % make kmat have odd dimensions
 [kr kc] = size(kmat);
-if rem(kr,2) == 0, % Remainder after division
+if rem(kr,2) == 0, % [Remainder after division]
     kmat = conv2(kmat,ones(2,1))/2;
     kr = kr + 1;
 end

@@ -17,12 +17,12 @@ wlen=length(awin);
 numtime = ceil((nsamp-wlen+1)/timestep);
 tfmat = zeros(numfreq,numtime+1);
 
-% so this loop samples x, I though x is already a sample.
+% [so this loop samples x, I though x is already a sample.]
 for i = 1:numtime
-    sind = ((i-1)*timestep)+1; % current start index
+    sind = ((i-1)*timestep)+1; % [current start index]
     tfmat(:,i) = fft(x(sind:(sind+wlen-1)).*awin,numfreq);
 end
-% below is inelegant... but apparently works.
+% [below is inelegant... but apparently works.]
 i = i+1;
 sind = ((i-1)*timestep)+1;
 lasts = min(sind,length(x));
