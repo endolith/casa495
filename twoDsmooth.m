@@ -11,7 +11,8 @@ function smat = twoDsmooth(mat,ker)
 %
 % SMAT is the smoothed matrix (same size as mat).
 
-if numel(ker)==1, % prod(size(ker))==1 if ker is a scalar
+% if prod(size(ker))==1, % if ker is a scalar
+if numel(ker)==1,
     kmat = ones(ker,ker)/ker^2;
 else
     kmat = ker;
