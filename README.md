@@ -23,3 +23,5 @@ There are several variations of DUET.  This version:
 - Uses theoretically optimal weighting of both microphones during reconstruction, instead of masking only one mixture. See p. 227 eq. 8.34.
 
 Use `run_duet.m` to run the algorithm.
+
+Originally created by yvesx as part of http://www.cs.northwestern.edu/~pardo/courses/casa/ wayback machine
