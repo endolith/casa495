@@ -135,5 +135,5 @@ for i=1:numsources
     % add back into the demix a little bit of the mixture
     % as that eliminates most of the masking artifacts
     % [original code seems to have missed the transpose]
-    soundsc(est(i,:)+0.05*x1',fs); % play demixture
+    soundsc(est(i,:)+0.05*x1',fs); pause; % play demixture
 end
